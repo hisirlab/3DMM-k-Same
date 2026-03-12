@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.vs/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific - Large files/folders
+dataset/
+results/
+examples/results/
+weights/*.pth
+FaceBoxes/weights/*.pth
+
+# Keep these weight files (add manually or via Git LFS)
+!weights/readme.md
+!FaceBoxes/weights/readme.md
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+.cache/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# C++ compilation
+*.o
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+build/
+cmake-build-*/
+
+# Cython
+*.c
+*.cpp
+!Sim3DR/lib/*.cpp
+!FaceBoxes/utils/nms/*.c
+
+# Old/backup files
+*_old.*
+*_backup.*
+*.orig

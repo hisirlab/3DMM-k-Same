@@ -1,0 +1,69 @@
+# ============================================================
+# 3D Face Anonymization System - Requirements
+# ============================================================
+# 
+# Install: pip install -r requirements.txt
+# Python Version: 3.8-3.11 recommended
+# ============================================================
+
+# ==================== Core Dependencies ====================
+
+# Deep learning framework
+torch>=1.9.0
+torchvision>=0.10.0
+
+# Numerical computing (fixed version for compatibility)
+numpy==1.26.4  # Must use 1.x, DO NOT upgrade to 2.x
+
+# Image processing
+opencv-python==4.10.0.84  # Fixed version, 4.11+ requires numpy 2.x
+pillow>=8.3.0
+scikit-image>=0.18.0  # For PSNR/SSIM calculation
+
+# Configuration and utilities
+pyyaml>=5.4.0
+tqdm>=4.62.0
+cython>=0.29.0  # For compiling extension modules
+
+# ==================== 3D Face Modeling ====================
+
+# ONNX runtime for 3DDFA inference
+onnxruntime>=1.8.0
+
+# 3D rendering dependencies
+scipy>=1.7.0
+
+# ==================== Face Recognition Evaluation ====================
+
+# FaceNet model
+facenet-pytorch>=2.5.0
+
+# ==================== Expression Recognition Evaluation ====================
+
+# FER library (fixed version to avoid API changes)
+fer==22.5.1  # DO NOT upgrade to 25.x
+
+# ============================================================
+# Installation Instructions
+# ============================================================
+# 
+# 1. Create virtual environment (recommended):
+#    python -m venv venv
+#    source venv/bin/activate    # Linux/Mac
+#    venv\Scripts\activate       # Windows
+#
+# 2. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Verify installation:
+#    python -c "import torch; import cv2; import facenet_pytorch; import fer; print('Success')"
+#
+# ============================================================
+# Important Notes
+# ============================================================
+#
+# - numpy version must be 1.x for PyTorch/FaceNet compatibility
+# - opencv-python 4.11+ conflicts with numpy 1.x
+# - fer 25.x has breaking API changes, use 22.5.1
+#
+# ============================================================
