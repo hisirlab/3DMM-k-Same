@@ -99,7 +99,7 @@ This project implements a 3D face model-based anonymization system. It combines 
 
 ```bash
 # Clone the repository
-git clone https://github.com/hisirlab/3DMM-k-Same
+git clone https://github.com/hisirlab/3DMM-k-Same.git
 
 # Create virtual environment (recommended)
 python -m venv venv
